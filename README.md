@@ -11,14 +11,14 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - _TODO: Enter the playbook file._
 ### Playbook Filebeat
 <p>
----
-- name: Installing and Launch Filebeat
-  hosts: webservers
-  become: yes
-  tasks:
-    # Use command module
-  - name: Download filebeat .deb file
-    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb
+--- <br>
+- name: Installing and Launch Filebeat <br>
+  hosts: webservers <br>
+  become: yes <br>
+  tasks: <br>
+    # Use command module <br>
+  - name: Download filebeat .deb file <br>
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb <br>
 
     # Use command module
   - name: Install filebeat .deb
