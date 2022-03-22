@@ -8,46 +8,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - _TODO: Enter the playbook filebeat-playbook.yml
 ### Playbook Filebeat
-<p>
---- <br>
-- name: Installing and Launch Filebeat <br>
-  hosts: webservers <br>
-  become: yes <br>
-  tasks: <br>
-    # Use command module <br>
-  - name: Download filebeat .deb file <br>
-    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb <br>
+![Diagrams](./ansible/filebeat-playbook.yml)
 
-    # Use command module
-  - name: Install filebeat .deb
-    command: dpkg -i filebeat-7.4.0-amd64.deb
-
-    # Use copy module
-  - name: Drop in filebeat.yml
-    copy:
-      src: /etc/ansible/files/filebeat-config.yml
-      dest: /etc/filebeat/filebeat.yml
-
-    # Use command module
-  - name: Enable and Configure System Module
-    command: filebeat modules enable system
-
-    # Use command module
-  - name: Setup filebeat
-    command: filebeat setup
-
-    # Use command module
-  - name: Start filebeat service
-    command: service filebeat start
-
-    # Use systemd module
-  - name: Enable service filebeat on boot
-    systemd:
-      name: filebeat
-      enabled: yes
-</p>
 
 
 This document contains the following details:
