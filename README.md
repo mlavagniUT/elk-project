@@ -26,13 +26,13 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly availability, in addition to restricting access to the network.
--What aspect of security do load balancers protect? The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks
--What is the advantage of a jump box? Jump box prevents all Azure VM’s to expose to the public, By using the network security group
+Load balancing ensures that the application will be highly availability, in addition to restricting access to the network. <br>
+-What aspect of security do load balancers protect? The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks  <br>
+-What is the advantage of a jump box? Jump box prevents all Azure VM’s to expose to the public, By using the network security group  <br>
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
-- What does Filebeat watch for?  Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
-- What does Metricbeat record? takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.  <br>
+- What does Filebeat watch for?  Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing <br>
+- What does Metricbeat record? takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash  <br>
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
