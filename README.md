@@ -76,7 +76,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 -Install docker python module
 -Configure sysctl
 -Download and launch elk container
-- ...
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
