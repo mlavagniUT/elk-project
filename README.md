@@ -106,5 +106,4 @@ SSH into the control node and follow the steps below:
 - You are going to need the following files: filebeat-playbook.yml and metric-playbook.yml you will copy those files the ansible container in the following directory /etc/ansible/roles
 - You will need to update the following files filebeat-config.yml & metricbeat-configuration.yml, you will modify the lines 1106 and 1806 with ElkServer private IP address 10.0.0.5
 - To check that its working go to http://ELKServer IP:5601/app/kibana#/home
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+ 
