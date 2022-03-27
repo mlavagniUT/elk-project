@@ -9,8 +9,8 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
 ### Playbook Files
--[Filebeat Playbbok](./ansible/filebeat-playbook.yml)<br>
--[Metric Playbbok](./ansible/metric-playbook.yml)<br>
+-[Filebeat Playbook](./ansible/filebeat-playbook.yml)<br>
+-[Metric Playbook](./ansible/metric-playbook.yml)<br>
 
 
 This document contains the following details:
@@ -51,7 +51,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 IP Address: 70.121.84.241
 
-Machines within the network can only be accessed by _Ansible container__.
+Machines within the network can only be accessed by Ansible container.
 -Which machine did you allow to access your ELK VM? My local Machine What was its IP address? 70.121.84.241
 
 A summary of the access policies in place can be found in the table below.
@@ -103,9 +103,8 @@ SSH into the control node and follow the steps below:
 - Update the configuration files to include the IP address of Elk Server
 - Run the playbook, and navigate to "http://ElkServerIP:5601/app/kibana#/home" to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- You are going to need the following files: filebeat-playbook.yml and metric-playbook.yml you will copy those files the ansible container in the following directory /etc/ansible/roles
+- You will need to update the following files filebeat-config.yml & metricbeat-configuration.yml, you will modify the lines 1106 and 1806 with ElkServer private IP address 10.0.0.5
+- To check that its working go to http://ELKServer IP:5601/app/kibana#/home
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
